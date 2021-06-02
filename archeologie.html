@@ -7,6 +7,14 @@
   </head>
 
   <body>
+
+    <a-assets>
+       <img id"texture" src="cailloux.jpg">
+    </a-assets>
+
+    <a-scene>
+      <a-plane id="plane" position="0 0 -5" rotation="-90 0 0" width="3" height="3" src= "cailloux.jpg"></a-plane>
+
       <a-box id="box" proximity-sensor="distance:2"
                        position="0 -0.3 -5" color="cyan" scale="0.3 0.3 0.3"
                        event-set__proximityenter="position: 0 0.15 -5"
