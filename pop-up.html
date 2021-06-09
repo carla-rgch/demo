@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <a-scene>
+
+      <a-assets>
+         <img id= "texture" src="texture.jpg">
+       </a-assets>
+
+      <a-assets>
+        <a-asset-item id="carlos-obj" src="carlos.obj"></a-asset-item>
+        <a-asset-item id="carlos-mtl" src="carlos.mtl"></a-asset-item>
+        <a-asset-item id="carlos-glb" src="carlos.glb"></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#carlos-glb"
+                position= "0 -9 0"
+                scale= "25 25 25"
+       ></a-entity>
+
+       <a-sky src="texture.jpg"></a-sky>
+       <a-camera position="0 2 0"></a-camera>
+   </a-scene>
+
+
+   </body>
+
+ </html>
